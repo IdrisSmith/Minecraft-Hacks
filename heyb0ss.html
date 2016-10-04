@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+</head>
+<body>
+  <svg width="100%"height="100%" viewBox="0 0 1000 800">
+<ellipse cx="500"cy="300"rx="250"ry="200"fill="pink"/>
+<circle cx="410"cy="250"r="40"fill="white"/>
+<circle cx="420"cy="234"r="20"/>
+<circle cx="590"cy="250"r="40"fill="white"/>
+<circle cx="598"cy="266"r="20"/>
+<rect x="370"y="210"height="80"width="80"fill="pink"opacity="0">
+<animate attributeName="opacity"from="0"to="1"dur=".2s"id="bigpapi"/>
+</rect>
+<circle cx="500"cy="400"r="100" fill="hotpink">
+<animate attributeName="opacity" from="1" to="0"
+ dur="2s"id="action1"begin="click"fill="freeze"/>
+<animate attributeName="opacity"from="0" to="1"
+ dur="2s"id="action2"begin="action1.end"fill="freeze"/>
+</circle>
+<circle cx="460"cy="400"r="20"fill="black">
+  <animate attributeName="opacity" from="1" to="0"
+   dur="2s"begin="action1.begin"fill="freeze"/>
+  <animate attributeName="opacity"from="0" to="1"
+   dur="2s"begin="action1.end"fill="freeze"/>
+</circle>
+<circle cx="540"cy="400"r="20"fill="black">
+  <animate attributeName="opacity" from="1" to="0"
+   dur="2s"begin="action1.begin"fill="freeze"/>
+  <animate attributeName="opacity"from="0" to="1"
+   dur="2s"begin="action1.end"fill="freeze"/>
+</circle>
+</svg>
+  </body>
+    </html>
