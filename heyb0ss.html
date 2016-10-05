@@ -5,31 +5,50 @@
 </head>
 <body>
   <svg width="100%"height="100%" viewBox="0 0 1000 800">
-<ellipse cx="500"cy="300"rx="250"ry="200"fill="pink"/>
-<polygon points="750 50 600 250 730 250" fill="pink"/>
-<circle cx="410"cy="250"r="40"fill="white"/>
-<circle cx="420"cy="234"r="20"/>
-<circle cx="590"cy="250"r="40"fill="white"/>
-<circle cx="598"cy="266"r="20"/>
-<rect x="370"y="210"height="80"width="80"fill="pink"opacity="0">
+<rect x="0"y="0"width="100%"height="100%"fill="cyan">
+<animate attributeName="fill"from="cyan"to="#3d005e"dur="10s"id="day"fill="freeze"/>
+<animate attributeName="fill"from="#3d005e"to="cyan"dur="10s"begin="day.end"fill="freeze"/>
+</rect>
+<circle cx="100"cy="100"r="75"fill="yellow">
+<animate attributeName="fill"from="yellow"to="grey"dur="10s"id="sun"/>
+<animate attriubteName="fill"from="grey"to="yellow"dur="10s"begin="sun.end"fill="freeze"/>
+</circle>
+<ellipse cx="500"cy="400"rx="250"ry="200"fill="pink"/>
+<polygon points="750 150 600 350 730 350" fill="pink"/>
+<polygon points="250 150 400 350 270 350"fill="pink"/>
+<circle cx="410"cy="350"r="40"fill="white"/>
+<circle cx="420"cy="334"r="20"fill="black">
+<animate attributeName="cx"from="420"to="410"dur="1s"id="eduppps"begin="bigpapi.end"/>
+<animate attributeName="cy"from="334"to="366"dur="1s"id="eduppps2"begin="bigpapi.end"/>
+<animate attributeName="cx"from="410"to="400"dur="1s"id="eduppps3"begin="eduppps.end"fill="freeze"/>
+<animate attributeName="cy"from="366"to="350"dur="1s"id="eduppps4"begin="eduppps2.end"fill="freeze"/>
+</circle>
+<circle cx="590"cy="350"r="40"fill="white"/>
+<circle cx="598"cy="366"r="20"fill="black">
+<animate attributeName="cx"from="598"to="582"dur="1s"id="he1"begin="bigpapi.end"/>
+<animate attributeName="cy"from="366"to="334"dur="1s"id="he2"begin="bigpapi.end"/>
+<animate attributeName="cy"from="334"to="350"dur="1s"begin="he2.end"fill="freeze"/>
+<animate attributeName="cx"from="582"to="576"dur="1s"begin="he1.end"fill="freeze"/>
+</circle>
+  <rect x="370"y="310"height="80"width="80"fill="pink"opacity="0">
 <animate attributeName="opacity"from="0"to="1"dur=".2s"id="bigpapi"begin="click"/>
 </rect>
-<rect x="550"y="210"height="80"width="80"fill="pink"opacity="0">
+<rect x="550"y="310"height="80"width="80"fill="pink"opacity="0">
 <animate attributeName="opacity"from="0"to="1"dur=".2s"begin="bigpapi.begin"/>
 </rect>
-<circle cx="500"cy="400"r="100" fill="hotpink">
+<circle cx="500"cy="500"r="100" fill="hotpink">
 <animate attributeName="opacity" from="1" to="0"
  dur="2s"id="action1"begin="click"fill="freeze"/>
 <animate attributeName="opacity"from="0" to="1"
- dur="2s"id="action2"begin="action1.end"fill="freeze"/>
+ dur="5s"id="action2"begin="action1.end"fill="freeze"/>
 </circle>
-<circle cx="460"cy="400"r="20"fill="black">
+<circle cx="460"cy="500"r="20"fill="black">
   <animate attributeName="opacity" from="1" to="0"
    dur="2s"begin="action1.begin"fill="freeze"/>
   <animate attributeName="opacity"from="0" to="1"
    dur="2s"begin="action1.end"fill="freeze"/>
 </circle>
-<circle cx="540"cy="400"r="20"fill="black">
+<circle cx="540"cy="500"r="20"fill="black">
   <animate attributeName="opacity" from="1" to="0"
    dur="2s"begin="action1.begin"fill="freeze"/>
   <animate attributeName="opacity"from="0" to="1"
