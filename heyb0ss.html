@@ -6,12 +6,14 @@
 <body>
   <svg width="100%"height="100%" viewBox="0 0 1000 800">
 <rect x="0"y="0"width="100%"height="100%"fill="cyan">
-<animate attributeName="fill"from="cyan"to="#3d005e"dur="10s"id="day"fill="freeze"/>
-<animate attributeName="fill"from="#3d005e"to="cyan"dur="10s"begin="day.end"fill="freeze"/>
+<animate attributeName="fill"from="cyan"to="darkblue"dur="10s"id="day"begin="click"fill="freeze"/>
+<animate attributeName="fill"from="darkblue"to="cyan"dur="10s"begin="day.end"fill="freeze"/>
 </rect>
 <circle cx="100"cy="100"r="75"fill="yellow">
-<animate attributeName="fill"from="yellow"to="grey"dur="10s"id="sun"/>
-<animate attriubteName="fill"from="grey"to="yellow"dur="10s"begin="sun.end"fill="freeze"/>
+<animate attributeName="fill"from="yellow"to="grey"dur="10s"begin="day.begin"id="sun"fill="freeze"/>
+<animate attributeName="cx"from="100"to="900"dur="10s"begin="day.begin"id="dawn"fill="freeze"/>
+<animate attributeName="cx"from="900"to="100"dur="10s"begin="dawn.end"fill="freeze"/>
+<animate attributeName="fill"from="grey"to="yellow"dur="10s"begin="sun.end"fill="freeze"/>
 </circle>
 <ellipse cx="500"cy="400"rx="250"ry="200"fill="pink"/>
 <polygon points="750 150 600 350 730 350" fill="pink"/>
