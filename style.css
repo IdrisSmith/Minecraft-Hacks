@@ -1,3 +1,18 @@
 body{
   background-image: url(http://all4desktop.com/data_images/original/4238051-background.jpg);
 }
+h1{
+  text-align: center;
+  color: green;
+  background-color: lightgreen;
+  border: 5px solid darkgreen;
+  padding: 10px;
+  font-size: 40px;
+}
+p{
+  text-align: center;
+  color: blue;
+  background-color: lightblue;
+  border: 5px solid darkblue;
+  padding: 20px;
+}
